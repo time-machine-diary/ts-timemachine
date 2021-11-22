@@ -1,0 +1,36 @@
+{
+  "name": "timemachine-diary",
+  "version": "0.0.1",
+  "description": "Timemachine diary",
+  "main": "index.js",
+  "repository": "git@github.com:time-machine-diary/ts-timemachine",
+  "author": "Jay Lee <jaylee.possible@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "prebuild": "npm run lint && npm run test && npm run clean",
+    "build": "webpack",
+    "serve": "webpack serve --config ./webpack.config.dev.js",
+    "lint": "eslint ./src",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.16.4"
+  }
+}
